@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Navigation World - Discover the Future of AI Tools</title>
     <meta name="description" content="Your ultimate destination for discovering cutting-edge AI tools and services. Explore the best artificial intelligence platforms in one place.">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5G5HPVSVR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S5G5HPVSVR');
+    </script>
+    
     <style>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5G5HPVSVR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S5G5HPVSVR');
-</script>
         * {
             margin: 0;
             padding: 0;
@@ -573,14 +574,14 @@
             });
         });
         
-        // Tool click functionality with analytics potential
+        // Tool click functionality with Google Analytics tracking
         function openTool(url) {
- // Track tool clicks with Google Analytics
-        gtag('event', 'tool_click', {
-            'event_category': 'AI Tools',
-            'event_label': url,
-            'transport_type': 'beacon'
-        });
+            // Track tool clicks with Google Analytics
+            gtag('event', 'tool_click', {
+                'event_category': 'AI Tools',
+                'event_label': url,
+                'transport_type': 'beacon'
+            });
             window.open(url, '_blank', 'noopener,noreferrer');
         }
         
@@ -632,5 +633,4 @@
         });
     </script>
 </body>
-
 </html>
